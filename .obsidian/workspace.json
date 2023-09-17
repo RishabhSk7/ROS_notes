@@ -4,41 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2028c84423d42178",
+        "id": "189ad4e152cf52ab",
         "type": "tabs",
         "children": [
           {
-            "id": "7defd20ab234c63a",
+            "id": "db567ee9f85ba819",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Topics and Messages.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "40fccbc5f0f721c2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "agitr-letter.pdf"
-              }
-            }
-          },
-          {
-            "id": "5c3466eacf4f25ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Turtlesim Simulator.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -107,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Topics and Messages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Topics and Messages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Topics and Messages.md"
+                "file": "2023-09-18.md"
               }
             }
           },
@@ -161,7 +133,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -175,21 +148,32 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7defd20ab234c63a",
+  "active": "258a8ac38f37e91b",
   "lastOpenFiles": [
-    "Pasted image 20230917235631.png",
-    "Pasted image 20230917235528.png",
-    "agitr-letter.pdf",
-    "Topics and Messages.md",
-    "Pasted image 20230917235246.png",
-    "Turtlesim Simulator.md",
-    "Nodes.md",
+    "Untitled.canvas",
+    "2023-09-18.md",
+    "Getting Started/Topics and Messages.md",
+    "README.md",
+    "Getting Started/Turtlesim Simulator.md",
     "images/Screenshot_20230914_161920.png",
     "images/Screenshot_20230914_130333.png",
-    "images",
-    "The Master.md"
+    "images/Pasted image 20230918004118.png",
+    "images/Pasted image 20230917235631.png",
+    "images/Pasted image 20230918001734.png",
+    "images/Pasted image 20230917235528.png",
+    "images/Pasted image 20230917235246.png",
+    "Getting Started/Nodes.md",
+    "Getting Started/The Master.md",
+    "Topics and Messages/Intro to Topics and Messages.md",
+    "Topics and Messages/Topics.md",
+    "Getting Started",
+    "agitr-letter.pdf",
+    "Excalidraw/Topics and Messages 2023-09-18 00.29.35.excalidraw.md",
+    "Excalidraw",
+    "images"
   ]
 }

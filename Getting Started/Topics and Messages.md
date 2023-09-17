@@ -1,3 +1,4 @@
+
 The primary mechanism that ROS nodes use to communicate is to send messages. Messages in ROS are organized into named <b>topics</b>.
 
 The idea is that a node that wants to share information will publish messages on the appropriate topic or topics; a node that wants to receive information will subscribe to the topic or topics that it’s interested in. The ROS master takes care of ensuring that publishers and subscribers can find each other; the messages themselves are sent directly from publisher to subscriber. ^abc0ed
@@ -19,10 +20,10 @@ Example:
 
 | Command | Description |
 |-|-|-|
-|rostopic hz topic-name | subscribe the given topic and output statistics in units of messages per second.| ![[Pasted image 20230917235528.png]]|
-|rostopic bw topic-name | subscribe the given topic and output statistics in units of bytes per second.| ![[Pasted image 20230917235246.png\|350]]|
+|rostopic hz topic-name | <br>subscribe the given topic and output statistics in units of messages per second.<br>| ![[Pasted image 20230917235528.png]]|
+|rostopic bw topic-name | <br>subscribe the given topic and output statistics in units of bytes per second.<br> | ![[Pasted image 20230917235246.png\|350]]|
 |rostopic info topic-name | learn more about a topic. Shows [[#^f0462c\|dataType]] of the topic and other info.| ![[Pasted image 20230917235631.png]]|
-|rosmsg show message-type-name | Shows [[#^207325\|details]] of a message (or [[#^55678a\|dataType]]) in a list of fields, one per line.|
+|rosmsg show message-type-name | Shows [[#^207325\|details]] of a message (or [[#^55678a\|dataType]]) in a list of fields, one per line.| ![[Pasted image 20230918004118.png]]|
 
 
 ### Viewing the graph
@@ -54,6 +55,21 @@ If the <b>Hide: Debug</b> is unchekced we get the following graph:
 
 
 
+
+
+### Understanding Message Type Names
+Every message type belongs to a specific package. Message type names always contain a slash, and the part before the slash is the name of the containing package:
+`package-name/type-name`
+
+For example, the `turtlesim/Color` message type breaks down this way:
+![[Topics and Messages 2023-09-18 00.29.35.excalidraw]]
+
+This division of message type names serves a few purposes. 
+<ul>
+<li>Including packages in the message type names helps to prevent name collisions. For example, geometry_msgs/Pose and turtlesim/Pose are distinct message types that contain different (but conceptually similar) data.</li>
+<li>When writing ROS programs, we’ll need to declare depen- dencies on other packages that contain message types that we use. Including the package name as part of the message type name makes these dependencies easier to see.</li>
+<li>Finally, knowing the package that contains a given message type can be useful for fig- uring out that type’s purpose. For example, the type name ModelState is quite mys- terious in isolation, but the full name gazebo/ModelState clarifies that this message type is part of the Gazebo simulator, and likely contains information about one of the models within that simulation.</li>
+</ul>
 
 ### Publishing messages from the command line
 
