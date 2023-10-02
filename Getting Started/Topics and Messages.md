@@ -3,18 +3,36 @@ The primary mechanism that ROS nodes use to communicate is to send messages. Mes
 
 The idea is that a node that wants to share information will publish messages on the appropriate topic or topics; a node that wants to receive information will subscribe to the topic or topics that it’s interested in. The ROS master takes care of ensuring that publishers and subscribers can find each other; the messages themselves are sent directly from publisher to subscriber. ^abc0ed
 
+### Communication via topics is many-to-many
+
+^ae9103
+
+Lets assume you run the following command:
+```
+ rosrun turtlesim turtlesim_node __name:=A 
+ rosrun turtlesim turtlesim_node __name:=B 
+ rosrun turtlesim turtle_teleop_key __name:=C 
+ rosrun turtlesim turtle_teleop_key __name:=D
+```
+This should start two instances of the turtlesim simulator—These should appear in two separate windows—and two instances of the turtlesim teleoperation node.
+Note: ![[Nodes#^938e0c]]
+Now try entering direction command in both the teleop terminal.
+
+You might have expected each teleoperation node to connect to one simulator, creating two independently controllable simulations. However, that these two kinds of nodes publish and subscribe, respectively, on the /turtle1/cmd_vel topic. Messages published on this topic, regardless of which node publishes them, are delivered to every subscriber of that topic.
+
+This means that nodes will listen to/publish to topics, regardless of how many publishers/receivers are there. On one end this means a reciever node will listen to a topic regardless of if there are a hundred or a thousand or <b>zero</b> nodes publishing to that topic.  ^3f753a
 ### Listing topics 
 To get a list of active topics, use this command:
 
-`$ rostopic list`
+` rostopic list`
 
 ### Reading messages of a particular topic
 You can see the actual messages that are being published on a single topic using the rostopic command: 
 
-`$  rostopic echo topic-name`
+`rostopic echo topic-name`
 
 Example:
-`$ rostopic echo /turtle1/cmd_vel`
+`rostopic echo /turtle1/cmd_vel`
 
 ### Some useful commands
 
@@ -29,7 +47,7 @@ Example:
 ### Viewing the graph
 This idea is probably easiest to see graphically, and the easiest way to visualize the publish- subscribe relationships between ROS nodes is to use this command:
 
-`$ rqt_graph `
+`rqt_graph `
 ^56b9ab
 
 In this name, the r is for ROS, and the qt refers to the Qt GUI toolkit used to implement the program.

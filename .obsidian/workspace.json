@@ -4,15 +4,62 @@
     "type": "split",
     "children": [
       {
-        "id": "189ad4e152cf52ab",
+        "id": "bfd828fd1569d66b",
         "type": "tabs",
+        "dimension": 56.30580357142857,
         "children": [
           {
-            "id": "db567ee9f85ba819",
+            "id": "dbdeb00780d0cfe6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Writing ROS programs/First program.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "79975544954dd9d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Writing ROS programs/Publisher Program.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3d52101ee865b14d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Writing ROS programs/Setting up Workspace.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "f48139fd50348a6d",
+        "type": "tabs",
+        "dimension": 43.69419642857143,
+        "children": [
+          {
+            "id": "2fa0b9b7bb95a818",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "agitr-letter.pdf"
+              }
             }
           }
         ]
@@ -44,7 +91,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": " tab ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,6 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Writing ROS programs/Publisher Program.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Writing ROS programs/Publisher Program.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-09-18.md"
+                "file": "Writing ROS programs/Publisher Program.md"
               }
             }
           },
@@ -132,9 +181,17 @@
                 "sortOrder": "frequency"
               }
             }
+          },
+          {
+            "id": "4b7ebf3155c60e79",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -149,16 +206,27 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "258a8ac38f37e91b",
+  "active": "79975544954dd9d7",
   "lastOpenFiles": [
+    "Writing ROS programs/First program.md",
+    "Writing ROS programs/Publisher Program.md",
+    "Writing ROS programs/Setting up Workspace.md",
+    "Getting Started/Topics and Messages.md",
+    "Getting Started/The Master.md",
+    "Getting Started/Nodes.md",
+    "Getting Started/Turtlesim Simulator.md",
+    "agitr-letter.pdf",
+    "First ROS program.md",
+    "Getting Started/Debugging.md",
+    "Getting Started/Installation.md",
+    "Writing ROS programs",
     "Untitled.canvas",
     "2023-09-18.md",
-    "Getting Started/Topics and Messages.md",
     "README.md",
-    "Getting Started/Turtlesim Simulator.md",
     "images/Screenshot_20230914_161920.png",
     "images/Screenshot_20230914_130333.png",
     "images/Pasted image 20230918004118.png",
@@ -166,12 +234,9 @@
     "images/Pasted image 20230918001734.png",
     "images/Pasted image 20230917235528.png",
     "images/Pasted image 20230917235246.png",
-    "Getting Started/Nodes.md",
-    "Getting Started/The Master.md",
     "Topics and Messages/Intro to Topics and Messages.md",
     "Topics and Messages/Topics.md",
     "Getting Started",
-    "agitr-letter.pdf",
     "Excalidraw/Topics and Messages 2023-09-18 00.29.35.excalidraw.md",
     "Excalidraw",
     "images"

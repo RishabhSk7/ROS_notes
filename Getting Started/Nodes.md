@@ -10,6 +10,8 @@ rosrun package-name executable-name
 
 `rosrun` is nothing fancy, just a script that takes argument of a package and which executable in package to run. It just knows, or takes a guess, at where the executable should be and runs it.
 
+Further, the ` __name:=A` argument will give the node a  custom name "A". This lets us run mulitple instance of a node, which roscore would otherwise restrict. ^938e0c
+
 ### Listing nodes
 ROS provides a few ways to get information about the nodes that are running at any particular time. To get a list of running nodes, try this command(requires master to be running):
 ```
@@ -48,3 +50,7 @@ You can also kill a node using the usual Ctrl-C technique. However, that method 
 ```
 rosnode cleanup
 ```
+
+### Nodes are loosely coupled
+This means that nodes are not aware of each other existence. This will coincide, and further explained in the topic [[Topics and Messages#^ae9103|Communication of nodes is many to many]]. Ultimately, ![[Topics and Messages#^3f753a]]
+Read up on Topics and Messages next.
